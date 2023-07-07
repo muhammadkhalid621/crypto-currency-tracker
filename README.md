@@ -44,3 +44,12 @@ The application's architecture can be described as follows:
     Prisma serves as an ORM (Object-Relational Mapping) tool for the SQLite database.
     For saving data, the application employs a POST request to a specific route (e.g., /save).
     The data sent in the POST request is subsequently saved to the Prisma SQLite database.
+
+
+# Usage
+
+- `src/routes`: Contains the Remix server routes.
+- `src/utils`: Contains the Prisma Connectivity to the Remix Server.
+- `src/api.js`: Handles API requests and interactions with external APIs.
+- `prisma`: Contains the Prisma configuration and schema files for the SQLite database.
+- `src/styles`: Contain the css of the application
