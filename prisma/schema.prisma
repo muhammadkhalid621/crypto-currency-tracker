@@ -1,0 +1,21 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = "file:./dev.db"
+  }
+  
+  
+  model CryptoCurrency {
+    id             Int      @id @default(autoincrement())
+    code           String   
+    name           String
+    amount         Float
+    tradeVolume24h Float
+    percentageChange Float
+  }
